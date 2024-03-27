@@ -8,15 +8,15 @@ const transporter = nodemailer.createTransport({
   secure: false,
   requireTLS: true,
   auth: {
-    user: "frontend236@gmail.com",
-    pass: "winfxjmqwiypvgut",
+    user: "XYZ@gmail.com",
+    pass: "Input_Password",
   },
 });
 
 const sendMail = async (email, subject, content) => {
   try {
     let mailOption = {
-      from: "frontend236@gmail.com",
+      from: "XYZ@gmail.com",
       to: email,
       subject: subject,
       html: content,
